@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <!-- No .jpg extension! -->
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/images" />
+
+    <TextView
+        android:id="@+id/valentineText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Will you be my Valentine? 👉👈"
+        android:textSize="28sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="20sp"/>
+
+
+
+    <!-- Video Player -->
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true" />
+
+
+    <!-- Yes Button -->
+    <Button
+        android:id="@+id/yesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes! 😁🥰"
+        android:backgroundTint="@color/green"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_below="@id/videoView"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- No Button -->
+    <Button
+        android:id="@+id/noButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No 🙂‍↔️"
+        android:backgroundTint="@color/red"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_below="@id/yesButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
